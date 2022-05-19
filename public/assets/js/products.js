@@ -5,7 +5,7 @@ fetch(`public/assets/data/samsung.json`, {
     .then(response => response.json())
     .then(data => {
 
-        // console.log(data);
+        console.log(data);
 
 
         /*------------- FONCTION ONCLICK BOUTON CATEGORIES ---------*/
@@ -28,6 +28,7 @@ fetch(`public/assets/data/samsung.json`, {
                     if (queryFamily == familyData) {
 
                         /*------------- SI OK, RECUPERATION DES DONNEES A AFFICHER ---------*/
+                        let productID = element.id;
                         let marque = element.marque;
                         let commercialName = element.nom_commercial;
                         let technicalName = element.nom_technique;
@@ -44,12 +45,12 @@ fetch(`public/assets/data/samsung.json`, {
                                         <div id="infoMovie" class="col-8">
                                             <div id="titleMovie" class="row">
                                                 <div class="col">
-                                                    <strong>${commercialName}</strong>
+                                                <i>${productID}</i> / <strong>${commercialName}</strong>
                                                 </div>
                                             </div>
                                             <div id="textMovie" class="row">
                                                 <div class="col">
-                                                ${technicalName.substring(0, 90)}
+                                                ${technicalName}
                                                 </div>
                                             </div>
                                             <div id="voteAverage" class="row">
