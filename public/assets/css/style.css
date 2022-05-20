@@ -129,6 +129,7 @@ background-repeat: no-repeat;
         align-items: center;
         height: 74vh;
         justify-content: space-around;
+        overflow:scroll;
     }
     .cart{
         display: none;

@@ -1,48 +1,41 @@
+var productsCart = JSON.parse(localStorage.getItem('productsCart'));
+console.log(productsCart);
+if (productsCart == null) {
+    productsCart = [];
+    console.log('Initialisation du tableau');
+} else {
+
+    productsCart = productsCart;
+    console.log('Tableau existant');
+
+    displayDatas();
+}
+
+
 let saveData = () => {
-    eachTableElement.addEventListener('click', (event) => {
-        console.log(event.target.dataset.id);
 
-        /*------------- RECUPERATION DES DONNEES JSON ---------*/
-        fetch(`public/assets/data/samsung.json`, {
-                method: "GET"
-            })
-            .then(response => response.json())
-            .then(data => {
+    let dataProductID = document.getElementById('btnDataLocalStorage').dataset.id;
+    // console.log(dataProductID);
 
-                data.results.forEach(element => {
-
-                    /*------------- COMPARAISON DES DONNEES ---------*/
-
-                    let productID = element.id;
-                    if (productID == event.target.dataset.id) {
-                        console.log(element.marque);
-                        console.log(element.nom_tutoriel);
-
-                        marqueModel.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel"><strong>Samsung ${element.nom_commercial}</strong>
-                                        (${element.nom_technique})</h5>`;
-                        infoModel.innerHTML = `
-                                    <div class="col-4">
-                                        <img style="width:100%;" src="https://trepidai-astuces.s3.amazonaws.com/images/modeles/${element.marque}_${element.nom_tutoriel}.jpg">
-                                    </div>
-                                    <div class="col-8">
-                                        BB
-                                    </div>
-                                    <div class="col-6">
-                                        <p>
-                                            Mémoire Ram : ${element.ram}
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button id="btnLocalStorage" data-id="${productID}" type="button" class="btn btn-primary"
-                                            data-bs-toggle="modal" data-bs-target="#modalCart${productID}">
-                                            Ajouter au panier
-                                        </button>
-                                    </div>`;
-
+    /*------------- RECUPERATION DES DONNEES JSON ---------*/
+    fetch(`public/assets/data/samsung.json`, {
+            method: "GET"
+        })
+        .then(response => response.json())
+        .then(data => {
+            data.results.forEach(element => {
+                // console.log(element.id);
+                if (dataProductID == element.id) {
+                    console.log('Bravo !!!');
+                    infoProject = {
+                        'productID': dataProductID
                     }
-                })
+                    productsCart.push(infoProject);
+                    localStorage.setItem("productsCart", JSON.stringify(productsCart));
+                }
             })
-    });
+        })
+
 }
 
 /*------------- FONCTION ONCLICK BOUTON CATEGORIES ---------*/
@@ -121,7 +114,7 @@ selectFamily.forEach(eachTableElement => {
                     // console.log(eachTableElement.dataset.id);
 
                     eachTableElement.addEventListener('click', (event) => {
-                        console.log(event.target.dataset.id);
+                        // console.log(event.target.dataset.id);
 
                         /*------------- RECUPERATION DES DONNEES JSON ---------*/
                         fetch(`public/assets/data/samsung.json`, {
@@ -136,8 +129,8 @@ selectFamily.forEach(eachTableElement => {
 
                                     let productID = element.id;
                                     if (productID == event.target.dataset.id) {
-                                        console.log(element.marque);
-                                        console.log(element.nom_tutoriel);
+                                        // console.log(element.marque);
+                                        // console.log(element.nom_tutoriel);
                                         infoModel.innerHTML = `
                                             <div class="modal-header">
                                             <h5 class="modal-title" id="staticBackdropLabel"><strong>Samsung ${element.nom_commercial}</strong>
@@ -169,25 +162,24 @@ selectFamily.forEach(eachTableElement => {
                                             </div>
                                             <div class="modal-footer">
                                                 <button id="btnDataLocalStorage" data-id="${productID}" type="button" class="btn btn-primary"
-                                                    data-bs-toggle="modal" data-bs-target="#modalCart${productID}">
+                                                    data-bs-toggle="modal" data-bs-target="#modalCart">
                                                     Ajouter au panier
                                                 </button>
                                             </div>`;
 
+
                                     }
                                 })
+
+                            })
+                            .finally(() => {
+                                btnDataLocalStorage.addEventListener('click', saveData);
                             })
                     });
                 })
-            })
-            
-            .finally(() => {
-
-
-
-                btnDataLocalStorage.addEventListener('click', saveData);
 
             })
+
 
         /*------------- FUNCTION AJOUTER DATA EN LOCALSTORAGE ---------*/
 
