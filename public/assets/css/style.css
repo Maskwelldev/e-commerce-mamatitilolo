@@ -89,6 +89,14 @@ a {
     align-items: center;
     padding-bottom: 10px;
 }
+.cartList.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartList{
+    display: none;
+    }
 
 
 .categorySmartphone {
