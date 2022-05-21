@@ -66,7 +66,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "705",
@@ -135,7 +136,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "733",
@@ -204,7 +206,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "734",
@@ -273,7 +276,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "748",
@@ -342,7 +346,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "749",
@@ -411,7 +416,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "756",
@@ -480,7 +486,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "785",
@@ -549,7 +556,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "812",
@@ -618,7 +626,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "813",
@@ -687,7 +696,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "831",
@@ -756,7 +766,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "834",
@@ -825,7 +836,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "859",
@@ -894,7 +906,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "880",
@@ -963,7 +976,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "901",
@@ -1032,7 +1046,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP67"
+            "indice_protection": "IP67",
+            "price":"200"
         },
         {
             "id": "902",
@@ -1101,7 +1116,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP67"
+            "indice_protection": "IP67",
+            "price":"200"
         },
         {
             "id": "908",
@@ -1170,7 +1186,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP67"
+            "indice_protection": "IP67",
+            "price":"200"
         },
         {
             "id": "959",
@@ -1239,7 +1256,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "960",
@@ -1308,7 +1326,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "977",
@@ -1377,7 +1396,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP67"
+            "indice_protection": "IP67",
+            "price":"200"
         },
         {
             "id": "1007",
@@ -1446,7 +1466,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1010",
@@ -1515,7 +1536,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1012",
@@ -1584,7 +1606,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IPX8"
+            "indice_protection": "IPX8",
+            "price":"200"
         },
         {
             "id": "1023",
@@ -1653,7 +1676,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "NON RENSEIGNEE"
+            "indice_protection": "NON RENSEIGNEE",
+            "price":"200"
         },
         {
             "id": "1025",
@@ -1722,7 +1746,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "NON RENSEIGNEE",
             "touche_home": "NON RENSEIGNEE",
-            "indice_protection": "NON RENSEIGNEE"
+            "indice_protection": "NON RENSEIGNEE",
+            "price":"200"
         },
         {
             "id": "1039",
@@ -1791,7 +1816,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "NON RENSEIGNEE",
             "touche_home": "Non",
-            "indice_protection": "IPX8"
+            "indice_protection": "IPX8",
+            "price":"200"
         },
         {
             "id": "1135",
@@ -1860,7 +1886,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1157",
@@ -1929,7 +1956,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1308",
@@ -1998,7 +2026,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1346",
@@ -2067,7 +2096,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1347",
@@ -2136,7 +2166,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1374",
@@ -2205,7 +2236,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1401",
@@ -2274,7 +2306,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1419",
@@ -2343,7 +2376,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1474",
@@ -2412,7 +2446,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1477",
@@ -2481,7 +2516,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1486",
@@ -2550,7 +2586,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1501",
@@ -2619,7 +2656,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1506",
@@ -2688,7 +2726,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1515",
@@ -2757,7 +2796,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1525",
@@ -2826,7 +2866,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1541",
@@ -2895,7 +2936,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1595",
@@ -2964,7 +3006,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1605",
@@ -3033,7 +3076,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1616",
@@ -3102,7 +3146,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1624",
@@ -3171,7 +3216,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1625",
@@ -3240,7 +3286,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1631",
@@ -3309,7 +3356,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1636",
@@ -3378,7 +3426,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1638",
@@ -3447,7 +3496,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1639",
@@ -3516,7 +3566,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1642",
@@ -3585,7 +3636,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1646",
@@ -3654,7 +3706,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1695",
@@ -3723,7 +3776,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1714",
@@ -3792,7 +3846,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1728",
@@ -3861,7 +3916,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1737",
@@ -3930,7 +3986,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1745",
@@ -3999,7 +4056,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1766",
@@ -4068,7 +4126,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1774",
@@ -4137,7 +4196,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1782",
@@ -4206,7 +4266,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1786",
@@ -4275,7 +4336,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1790",
@@ -4344,7 +4406,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1793",
@@ -4413,7 +4476,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1796",
@@ -4482,7 +4546,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1799",
@@ -4551,7 +4616,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "NON RENSEIGNEE"
+            "indice_protection": "NON RENSEIGNEE",
+            "price":"200"
         },
         {
             "id": "1803",
@@ -4620,7 +4686,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IPX2"
+            "indice_protection": "IPX2",
+            "price":"200"
         },
         {
             "id": "1806",
@@ -4689,7 +4756,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IPX2"
+            "indice_protection": "IPX2",
+            "price":"200"
         },
         {
             "id": "1810",
@@ -4758,7 +4826,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "1818",
@@ -4827,7 +4896,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IPX7"
+            "indice_protection": "IPX7",
+            "price":"200"
         },
         {
             "id": "1878",
@@ -4896,7 +4966,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68 + 5 ATM + MIL_STD 810G"
+            "indice_protection": "IP68 + 5 ATM + MIL_STD 810G",
+            "price":"200"
         },
         {
             "id": "1879",
@@ -4965,7 +5036,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68 + 5 ATM + MIL_STD 810G"
+            "indice_protection": "IP68 + 5 ATM + MIL_STD 810G",
+            "price":"200"
         },
         {
             "id": "1898",
@@ -5034,7 +5106,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68 + 5 ATM + MIL_STD 810G"
+            "indice_protection": "IP68 + 5 ATM + MIL_STD 810G",
+            "price":"200"
         },
         {
             "id": "1900",
@@ -5103,7 +5176,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68 + 5 ATM + MIL_STD 810G"
+            "indice_protection": "IP68 + 5 ATM + MIL_STD 810G",
+            "price":"200"
         },
         {
             "id": "1905",
@@ -5172,7 +5246,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "NON RENSEIGNEE"
+            "indice_protection": "NON RENSEIGNEE",
+            "price":"200"
         },
         {
             "id": "1918",
@@ -5241,7 +5316,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "1927",
@@ -5310,7 +5386,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "IP68"
+            "indice_protection": "IP68",
+            "price":"200"
         },
         {
             "id": "2089",
@@ -5379,7 +5456,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2098",
@@ -5448,7 +5526,8 @@
             "micro_secondaire": "Non",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2099",
@@ -5517,7 +5596,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2112",
@@ -5586,7 +5666,8 @@
             "micro_secondaire": "NON RENSEIGNEE",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2119",
@@ -5655,7 +5736,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Non",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2120",
@@ -5724,7 +5806,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2122",
@@ -5793,7 +5876,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2123",
@@ -5862,7 +5946,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2125",
@@ -5931,7 +6016,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Oui",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         },
         {
             "id": "2126",
@@ -6000,7 +6086,8 @@
             "micro_secondaire": "Oui",
             "prise_kit_pieton": "Oui",
             "touche_home": "Non",
-            "indice_protection": "Non"
+            "indice_protection": "Non",
+            "price":"200"
         }
     ]
 }
