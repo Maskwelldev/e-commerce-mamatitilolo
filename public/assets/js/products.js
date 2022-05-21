@@ -25,8 +25,8 @@ let cartVue = () => {
         cartVueModal.innerHTML += `
         <div class=" col-12 modal-header">
             <div class="row p-3">
-                <div class="col-1 bg-primary">
-                    <img data-id="${idProject}" class="delete" src="public/assets/img/delete.png">
+                <div class="col-1">
+                    <img data-id="${idProject}" class="delete" src="public/assets/img/delete.png" title="Supprimer l'article du panier">
                 </div>
                 <div class="col-3">${element.marque}</div>
                 <div class="col-8">${element.commercialName} (${element.technicalName})</div>
@@ -53,13 +53,7 @@ let btnValidCmd = () => {
 
     CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Confirmation de commande</h5>`;
 
-    var listProducts = JSON.parse(localStorage.getItem('productsCart'));
-    // console.log(listProducts);
-    listProducts.forEach(element => {
-
-        idProject = listProducts.indexOf(element);
-
-        cartVueModal.innerHTML += `
+    cartVueModal.innerHTML += `
         <div class="col-12">
             <div class="row">
                 <div class="col-1">
@@ -67,8 +61,8 @@ let btnValidCmd = () => {
                 </div>
                 <div class="col-3">${element.productID}</div>
                 <div class="col-7">${element.marque}</div>
-            </div>`;
-    });
+            </div>
+        </div>`;
 
 
     cartFooterPrice.innerHTML = `<div class="text-center">

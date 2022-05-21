@@ -1461,7 +1461,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
 
 
 .delete {
-    width: 3%;
+    width: 70%;
     /* padding: 2px; */
     position: relative;
     right:10px;
