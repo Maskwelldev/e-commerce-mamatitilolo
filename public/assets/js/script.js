@@ -5,9 +5,8 @@ function displayList() {
 }
 
 
-shoppingCart.addEventListener('click', displayCart)
+// shoppingCart.addEventListener('click', displayCart)
 
-function displayCart() {
-    cartList.classList.toggle('active')
-}
-
+// function displayCart() {
+//     cartList.classList.toggle('active')
+// }
