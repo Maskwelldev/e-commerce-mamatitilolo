@@ -43,15 +43,6 @@ let saveData = () => {
                 // console.log(element.id);
                 if (dataProductID == element.id) {
 
-
-
-
-
-
-
-
-
-                    
                     priceProduct = Number(element.price);
                     quantityProduct = Number(1);
                     infoProject = {
@@ -105,7 +96,7 @@ let cartVue = () => {
     cartFooterPrice.innerHTML = ``;
     cartFooterVue.innerHTML = ``;
     // productsVue.innerHTML = ``;
-    
+
     CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
 
     cartVueModal.innerHTML += `
