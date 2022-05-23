@@ -266,11 +266,14 @@ selectFamily.forEach(eachTableElement => {
 
                                     let productID = element.id;
                                     if (productID == event.target.dataset.id) {
-                                        // console.log(element.marque);
-                                        // console.log(element.nom_tutoriel);
-                                        CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel"><strong>Samsung ${element.nom_commercial}</strong>
+
+                                        if (element.famille == 'Smartphone' || element.famille == 'Tablette') {
+
+                                            // console.log(element.marque);
+                                            // console.log(element.nom_tutoriel);
+                                            CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel"><strong>Samsung ${element.nom_commercial}</strong>
                                         (${element.nom_technique})</h5>`;
-                                        cartVueModal.innerHTML = `
+                                            cartVueModal.innerHTML = `
                                         <div class="modal-header">
                                             <div class="col-4">
                                                 <img style="width:100%;"
@@ -295,14 +298,50 @@ selectFamily.forEach(eachTableElement => {
                                                 </p>
                                             </div>
                                         </div>`;
-                                        cartFooterPrice.innerHTML = `
-                                        <div>${element.price}€
+                                            cartFooterPrice.innerHTML = `
+                                        <div>Prix de vente : ${element.price}€
                                         </div>`;
-                                        cartFooterVue.innerHTML = `
+                                            cartFooterVue.innerHTML = `
+                                                            <button id="btnDataLocalStorage" data-id="${productID}" type="button" class="btn btn-primary">
+                                                                Ajouter au panier
+                                                            </button>`;
+                                        } else if (element.famille == 'Accessoires') {
+
+                                            // console.log(element.marque);
+                                            // console.log(element.nom_tutoriel);
+                                            CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel"><strong>Samsung ${element.nom_commercial}</strong>
+                                        (${element.nom_technique})</h5>`;
+                                            cartVueModal.innerHTML = `
+                                        <div class="modal-header">
+                                            <div class="col-4">
+                                                <img style="width:100%;"
+                                                    src="https://trepidai-astuces.s3.amazonaws.com/images/modeles/${element.marque}_${element.nom_tutoriel}.jpg">
+                                            </div>
+                                            <div class="offset-1 col-7">
+                                                <p>
+                                                    <strong>Bluetooth :</strong>
+                                                    <br>Version ${element.bluetooth}
+                                                </p>
+                                                <p>
+                                                    <strong>Poids :</strong>
+                                                    <br>${element.poids} grammes
+                                                </p>
+                                                <p>
+                                                    <strong>Année de lancement :</strong>
+                                                    <br>${element.annee_lancement}
+                                                </p>
+                                            </div>
+                                        </div>`;
+                                            cartFooterPrice.innerHTML = `
+                                        <div>Prix de vente : ${element.price}€
+                                        </div>`;
+                                            cartFooterVue.innerHTML = `
                                                             <button id="btnDataLocalStorage" data-id="${productID}" type="button" class="btn btn-primary">
                                                                 Ajouter au panier
                                                             </button>`;
 
+
+                                        }
 
                                     }
                                 })
@@ -330,20 +369,20 @@ selectFamily.forEach(eachTableElement => {
 
 /*------------- DELETE ALL ---------*/
 
-// let deleteAll = () => {
-//     console.log('toto');
-//     localStorage.clear();
-//     productsCart = [];
+let deleteAll = () => {
+    console.log('toto');
+    localStorage.clear();
+    productsCart = [];
 
-//     CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
-//     cartVueModal.innerHTML = `<div class="modal-header">
-//         Votre panier ne comporte actuellement aucun produit
-//     </div>`;
-//     cartFooterPrice.innerHTML = `0€`;
-//     cartFooterVue.innerHTML = `
-//     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Commencer mes achats</button>`;
-//     // productsVue.innerHTML = ``;
-// }
+    CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
+    cartVueModal.innerHTML = `<div class="modal-header">
+        Votre panier ne comporte actuellement aucun produit
+    </div>`;
+    cartFooterPrice.innerHTML = `0€`;
+    cartFooterVue.innerHTML = `
+    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Commencer mes achats</button>`;
+    // productsVue.innerHTML = ``;
+}
 
 btnCartVue.addEventListener('click', cartVue);
 
