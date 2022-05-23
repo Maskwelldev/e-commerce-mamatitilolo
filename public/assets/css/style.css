@@ -10,7 +10,7 @@ body {
 }
 
 header{
-    min-height:  10vh;;
+    min-height: 10vh;
     width: 100%;
 }
 
@@ -54,7 +54,7 @@ h1{
 }
 
 .logo {
-    height: 10vh;
+    height: auto;
     background-color: #000000;
     display: flex;
     justify-content: center;
@@ -292,7 +292,8 @@ span{
         display: flex;
         justify-content: space-between;
         background-color: #121212;
-        height: 80px;
+        min-height: 80px;
+        height: 100%;
     }
 
     .logo {
