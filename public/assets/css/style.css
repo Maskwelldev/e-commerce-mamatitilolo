@@ -282,12 +282,10 @@ span{
         align-items: center;
         /* height: 74vh; */
         justify-content: space-around;
-<<<<<<< HEAD
         overflow:scroll;
-=======
+        background-color:#fcfcfc;
         background-color:#0048BA;
-
->>>>>>> 25e17b6f41d08485b2a48e3f1521830f992f37f6
+        background-color:#0048BA;
     }
     .cart {
         display: none;
@@ -324,6 +322,9 @@ span{
     h1{
         font-size: 2rem;
     }
+
+}
+
     .copyright{
         text-align: center;
     }
@@ -331,4 +332,3 @@ span{
         display: none;
     }
 
-}
