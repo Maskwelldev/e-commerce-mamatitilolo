@@ -3,83 +3,32 @@ console.log(productsCart);
 if (productsCart == null) {
     productsCart = [];
     console.log('Initialisation du tableau');
+
+    
+    CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
+    cartVueModal.innerHTML = `<div class="modal-header">
+        Votre panier ne comporte actuellement aucun produit
+    </div>`;
+    cartFooterPrice.innerHTML = `0€`;
+    cartFooterVue.innerHTML = `
+    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Commencer mes achats</button>`;
+    // productsVue.innerHTML = ``;
 } else {
 
     productsCart = productsCart;
     console.log('Tableau existant');
 
-    // displayDatas();
-}
-
-/*------------- AFFICHAGE DU PANIER ---------*/
-let cartVue = () => {
-
-    CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
+    
+    CartVueTitle.innerHTML = ``;
     cartVueModal.innerHTML = ``;
-    let listProducts = JSON.parse(localStorage.getItem('productsCart'));
-    // console.log(listProducts);
-    listProducts.forEach(element => {
-
-        idProject = listProducts.indexOf(element);
-
-        cartVueModal.innerHTML += `
-        <div class=" col-12 modal-header">
-            <div class="row p-3">
-                <div class="col-1">
-                    <img data-id="${idProject}" class="delete" src="public/assets/img/delete.png" title="Supprimer l'article du panier">
-                </div>
-                <div class="col-3">${element.marque}</div>
-                <div class="col-8">${element.commercialName} (${element.technicalName})</div>
-            </div>
-        </div>`;
-    });
-
-
-    cartFooterPrice.innerHTML = `<div class="text-center">
-        Souhaitez vous valider le panier ou continuer vos achats ?
-    </div>`;
-    cartFooterVue.innerHTML = `
-    <button id="btnDeleteAll" class="btn btn-secondary">Vider le panier</button>
-    <button id="btnValidCmd" data-id="" type="button" class="btn btn-primary" data-bs-toggle="modal"
-        data-bs-target="#modalCart">
-        Confirmer la commande
-    </button>
-    `;
+    cartFooterPrice.innerHTML = ``;
+    cartFooterVue.innerHTML = ``;
+    // productsVue.innerHTML = ``;
 }
 
 
 
-let btnValidCmd = () => {
-
-    CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Confirmation de commande</h5>`;
-
-    cartVueModal.innerHTML += `
-        <div class="col-12">
-            <div class="row">
-                <div class="col-1">
-                    <img data-id="${idProject}" class="delete" src="public/assets/img/delete.png">
-                </div>
-                <div class="col-3">${element.productID}</div>
-                <div class="col-7">${element.marque}</div>
-            </div>
-        </div>`;
-
-
-    cartFooterPrice.innerHTML = `<div class="text-center">
-        Souhaitez vous valider le panier ou continuer vos achats ?
-    </div>`;
-    cartFooterVue.innerHTML = `
-    <button id="btnValidCmd" data-id="" type="button" class="btn btn-primary" data-bs-toggle="modal"
-        data-bs-target="#modalCart">
-        Confirmer la commande
-    </button>
-    `;
-
-}
-
-
-
-
+/*------------- ENREGISTRTEMENT DES DONNEES ---------*/
 let saveData = () => {
 
     let dataProductID = document.getElementById('btnDataLocalStorage').dataset.id;
@@ -94,14 +43,15 @@ let saveData = () => {
             data.results.forEach(element => {
                 // console.log(element.id);
                 if (dataProductID == element.id) {
-                    console.log('Bravo !!!');
+                    let priceProduct = Number(element.price);
                     infoProject = {
                         'productID': dataProductID,
                         'marque': element.marque,
                         'commercialName': element.nom_commercial,
                         'technicalName': element.nom_technique,
                         'tutorialName': element.nom_tutoriel,
-                        'priceProduct': element.price,
+                        'priceProduct': priceProduct,
+                        'quantityProduct': 1,
                         'statusCmd': 'pending'
                     }
                     productsCart.push(infoProject);
@@ -135,6 +85,111 @@ let saveData = () => {
         })
 
 }
+
+/*------------- AFFICHAGE DU PANIER ---------*/
+let cartVue = () => {
+
+    let cartFullValue = 0;
+    if (productsCart != null) {
+    CartVueTitle.innerHTML = ``;
+    cartVueModal.innerHTML = ``;
+    cartFooterPrice.innerHTML = ``;
+    cartFooterVue.innerHTML = ``;
+    }
+    let listProducts = JSON.parse(localStorage.getItem('productsCart'));
+    // console.log(listProducts);
+    listProducts.forEach(element => {
+
+        cartFullValue = cartFullValue + element.priceProduct;
+        console.log(cartFullValue);
+
+        idProject = listProducts.indexOf(element);
+
+        CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
+        cartVueModal.innerHTML += `
+        <div class=" col-12">
+            <div class="row p-3">
+                <div class="col-1">
+                    <img data-id="${idProject}" class="delete" src="public/assets/img/delete.png" title="Supprimer l'article du panier">
+                </div>
+                <div class="col-3">${element.marque}</div>
+                <div class="col-8">${element.commercialName} (${element.technicalName})</div>
+            </div>
+        </div>`;
+    });
+    cartFooterPrice.innerHTML += cartFullValue;
+    cartFooterVue.innerHTML += `
+    <div class="text-center">
+    Souhaitez vous valider le panier ou continuer vos achats ?
+</div>
+        <button id="btnDeleteAll" class="btn btn-secondary">Vider le panier</button>
+    <button id="btnValidCmd" data-id="" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#modalCart">
+        Confirmer la commande
+    </button>
+    `;
+
+}
+
+
+
+
+/*------------- VALID COMMANDE ---------*/
+
+let ValidCmd = () => {
+
+    CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Confirmation de commande</h5>`;
+
+    cartVueModal.innerHTML = `
+        <div class="col-12">
+            <div class="row">
+                <div class="col-1">
+                    AAA
+                </div>
+            </div>
+        </div>`;
+
+
+    cartFooterPrice.innerHTML = `<div class="text-center">
+        Souhaitez vous valider le panier ou continuer vos achats ?
+    </div>`;
+    cartFooterVue.innerHTML = `
+    <button id="" data-id="" type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#modalCart">
+        Confirmer la commande
+    </button>
+    `;
+
+}
+
+/*------------- DELETE DATA ONE ---------*/
+let deleteData = (event) => {
+    let target = event.target;
+    if (target.classList == 'delete') {
+        let projectID = target.dataset.id;
+        productsCart.splice(projectID, 1);
+        localStorage.setItem("productsCart", JSON.stringify(productsCart));
+        target.closest('.row').remove();
+    }
+}
+
+/*------------- DELETE ALL ---------*/
+
+let deleteAll = () => {
+    localStorage.clear();
+    productsCart = [];
+
+    CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
+    cartVueModal.innerHTML = `<div class="modal-header">
+        Votre panier ne comporte actuellement aucun produit
+    </div>`;
+    cartFooterPrice.innerHTML = `0€`;
+    cartFooterVue.innerHTML = `
+    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Commencer mes achats</button>`;
+    // productsVue.innerHTML = ``;
+}
+
+
 
 /*------------- FONCTION ONCLICK BOUTON CATEGORIES ---------*/
 let selectFamily = document.querySelectorAll('#categories');
@@ -291,5 +346,15 @@ selectFamily.forEach(eachTableElement => {
 
 
 btnCartVue.addEventListener('click', cartVue);
-btnValidCmd.addEventListener('click', validCmd);
-btnDeleteAll.addEventListener('click', deleteAll);
+
+btnDeleteParents = document.getElementById('cartVueModal');
+// console.log(btnDeleteParents);
+btnDeleteParents.addEventListener('click', deleteData);
+
+
+
+// btnValidCmd.addEventListener('click', validCmd);
+
+btnDeleteParentsAll = document.getElementById('cartFooterVue');
+// console.log(btnDeleteParents);
+btnDeleteParentsAll.addEventListener('click', deleteAll);
