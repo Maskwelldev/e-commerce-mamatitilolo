@@ -1309,12 +1309,12 @@ div.cart-collaterals ul.products li.product .price ins {
     overflow: hidden;
 }
 
-/* .col-1,
+.col-1,
 .col-2 {
     float: left;
     margin-left: 30px;
     width: 360px;
-} */
+}
 
 #customer_details label {
     display: block;
@@ -1457,13 +1457,4 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
 .pagination>li>a,
 .pagination>li>span {
     color: #5a88ca;
-}
-
-
-.delete {
-    width: 70%;
-    /* padding: 2px; */
-    position: relative;
-    right:10px;
-    bottom:1px;
 }
