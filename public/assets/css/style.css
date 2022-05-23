@@ -1,7 +1,7 @@
-* {
+/* * {
     margin: 0px;
     padding: 0px;
-}
+} */
 
 body {
     height: 100vh;
@@ -10,13 +10,14 @@ body {
 }
 
 header{
-    min-height:  10vh;;
+    min-height:  10vh;
     width: 100%;
 }
 
 main {
     width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
+    /* overflow:scroll; */
 }
 
 #hone {
@@ -37,7 +38,7 @@ h2{
     padding: 20px;
     background-color: #0000006b;
     font-size: 1rem;
-    width: 100px;
+    /* width: 100px; */
     text-align: center;
 }
 .hover:hover{
@@ -276,12 +277,12 @@ span{
     main {
         width: 100%;
         min-height: 80%;
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         align-items: center;
         /* height: 74vh; */
         justify-content: space-around;
-        background-color:#0048BA;
+        /* background-color:#0048BA; */
 
     }
     .cart {
