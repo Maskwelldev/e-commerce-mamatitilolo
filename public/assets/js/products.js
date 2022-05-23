@@ -42,6 +42,16 @@ let saveData = () => {
             data.results.forEach(element => {
                 // console.log(element.id);
                 if (dataProductID == element.id) {
+
+
+
+
+
+
+
+
+
+                    
                     priceProduct = Number(element.price);
                     quantityProduct = Number(1);
                     infoProject = {
@@ -95,6 +105,20 @@ let cartVue = () => {
     cartFooterPrice.innerHTML = ``;
     cartFooterVue.innerHTML = ``;
     // productsVue.innerHTML = ``;
+    
+    CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
+
+    cartVueModal.innerHTML += `
+    <div class=" col-12 text-center">
+        <div class="row p-3">
+            <div class="col-1"></div>
+            <div class="col-3"><strong>Marque</strong></div>
+            <div class="col-6"><strong>Modèle</strong></div>
+            <div class="col-2"><strong>Quantité</strong></div>
+        </div>
+    </div>
+    `;
+
     let cartFullValue = 0;
     let listProducts = JSON.parse(localStorage.getItem('productsCart'));
     // console.log(listProducts);
@@ -105,7 +129,6 @@ let cartVue = () => {
 
         idProject = listProducts.indexOf(element);
 
-        CartVueTitle.innerHTML = `<h5 class="modal-title" id="staticBackdropLabel">Votre panier</h5>`;
         cartVueModal.innerHTML += `
             <div class=" col-12">
                 <div class="row p-3">
@@ -113,7 +136,8 @@ let cartVue = () => {
                         <img data-id="${idProject}" class="delete" src="public/assets/img/delete.png" title="Supprimer l'article du panier">
                     </div>
                     <div class="col-3">${element.marque}</div>
-                    <div class="col-8">${element.commercialName} (${element.technicalName})</div>
+                    <div class="col-6">${element.commercialName} (${element.technicalName})</div>
+                    <div class="col-2 text-center">${element.quantityProduct}</div>
                 </div>
             </div>
         `;
